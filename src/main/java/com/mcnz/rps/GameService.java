@@ -6,13 +6,13 @@ public class GameService {
 	public GameSummary playRoshambo(String clientGesture) {
 		
 		String result = "error";
-		if (clientGesture.equals("scissors")) {
+		if ("scissors".equals(clientGesture)) {
 			result = "lose";
 		}
-		if (clientGesture.equals("paper")) {
+		if ("paper".equals(clientGesture)) {
 			result = "win";
 		}
-		if (clientGesture.equals("rock")) {
+		if ("rock".equals(clientGesture)) {
 			result = "tie";
 		}
 		GameSummary gameSummary = new GameSummary(clientGesture, "rock", result);

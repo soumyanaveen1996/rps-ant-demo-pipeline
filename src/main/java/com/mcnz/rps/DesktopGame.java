@@ -26,7 +26,7 @@ public class DesktopGame {
 				result = "tie";
 				score.increaseTies();
 			}
-			if (input.equalsIgnoreCase("quit")) {
+			if ("quit".equalsIgnoreCase(input)) {
 				break;
 			}
 			GameSummary gs = new GameSummary(input, "rock", result);
